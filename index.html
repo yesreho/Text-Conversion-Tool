@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首字母大小写转换工具</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1 id="headerTitle">文本转换工具</h1>
+            <div class="header-icons">
+                <i id="languageToggleButton" class="fas fa-language" title="切换语言"></i>
+                <i id="darkModeToggleButton" class="fas fa-moon" title="切换暗黑模式"></i>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h2 id="mainTitle">英文首字母大小写转换器</h2>
+        <textarea id="inputText" placeholder="输入英文文本..."></textarea>
+        <div class="buttons">
+            <button id="convertToLowercaseButton">转换为小写</button>
+            <button id="convertToUppercaseButton">转换为大写</button>
+        </div>
+        <h3 id="resultTitle">转换结果</h3>
+        <div id="outputTextContainer">
+            <div id="outputText"></div>
+            <div id="outputStats">
+                <p><span id="charCountLabel">字符数:</span> <span id="charCount">0</span></p>
+                <p><span id="wordCountLabel">字数:</span> <span id="wordCount">0</span></p>
+                <p><span id="sentenceCountLabel">句子数:</span> <span id="sentenceCount">0</span></p>
+                <p><span id="lineCountLabel">行数:</span> <span id="lineCount">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
